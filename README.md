@@ -24,6 +24,10 @@ Folgende Software wird benötigt, um die Beispiele und Aufgaben bearbeiten zu k�
   [Windows](https://jmeubank.github.io/tdm-gcc/download/),
   [Mac OS](https://osxdaily.com/2023/05/02/how-install-gcc-mac/)
 
+Falls Sie keine Software auf Ihrem Rechner installieren können, dafür aber einen GitHub-Benutzer
+haben, können Sie die Quellcodes unter folgender Adresse auch in der Gitpod Online-IDE bearbeiten:
+[https://gitpod.io/#https://github.com/DennisSchulmeister/dhbwka-mt-prog1-quellcodes](https://gitpod.io/#https://github.com/DennisSchulmeister/dhbwka-mt-prog1-quellcodes)
+
 Kompileren und Ausführen der Quellcodes
 ---------------------------------------
 
@@ -39,8 +43,8 @@ welches Betriebssystem Sie verwenden:
 * **Windows:** Keine Anpassung erforderlich
 * **Linux, Unix oder Mac OS:** Siehe Kommentare in der Date [Makefile](Makefile)
 
-Anschließend kann man in der Kommandozeile einfach in das jeweilige Beispiel- oder Aufgabenverzeichnis
-wechseln und dort folgende Befehle ausführen:
+Die Gitpod Online-IDE läuft unter Linux. Anschließend kann man in der Kommandozeile einfach in das
+jeweilige Beispiel- oder Aufgabenverzeichnis wechseln und dort folgende Befehle ausführen:
 
 | **Befehl**   | **Funktion**                                                 |
 |--------------|--------------------------------------------------------------|
