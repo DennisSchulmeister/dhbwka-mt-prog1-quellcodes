@@ -2,6 +2,20 @@
  * Beispiel: Grundlegende Syntax von C und C++
  * ===========================================
  * 
+ * Dieses Beispiel zeigt die wichtigsten Syntaxelemente, die in einem C/C++-Programm häufig
+ * verwendet werden. Unter Anderem sehen wir hier:
+ *
+ *  - Präprozessoranweisungen wie `#include`
+ *  - Reservierte Schlüsselwörter wie `using`, `int` oder `return`
+ *  - Die Verwendung einfacher Variablen vom Typ `bool` oder `char`
+ *  - Die Ausgabe von Text auf der Konsole
+ *  - Das Einlesen von Benutzereingaben über die Konsole
+ *  - Eine `while`-Schleife
+ *  - Eine Fallunterscheidung mit `switch`/`case`
+ *  - Deklaration und Verwendung einer eigenen Funktion
+ *
+ * Als Fallbeispiel wird hier eine einfache Menü-Oberfläche zur Steuerung eines Roboterarms
+ * simuliert.
  ***********************************************************************************************/
 #include <iostream>
 using namespace std;
