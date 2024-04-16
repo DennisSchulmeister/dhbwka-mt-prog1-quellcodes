@@ -51,6 +51,6 @@ jeweilige Verzeichnis wechseln, stehen Ihnen dort folgende Befehle zur Verfügun
 |--------------|--------------------------------------------------------------|
 | `make run`   | Kompilieren, Linken und Ausführen des Programms              |
 | `make all`   | Kompilieren und Linken in einem Schritt                      |
-| `make'       | Dasselbe wie `make all`                                      |
+| `make`       | Dasselbe wie `make all`                                      |
 | `make clean` | Vom Compiler erzeugte Dateien wieder löschen                 |
 | `make xyz.o` | Kompilieren der Quelldatei `xyz.cpp` zur Objektdatei `xyz.o` |
