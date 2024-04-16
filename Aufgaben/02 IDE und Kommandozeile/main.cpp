@@ -15,7 +15,7 @@
  *    Bedenken Sie, dass der Name "Dagobert Duck" nirgendswo im Quellcode fest hinterlegt
  *    ist, sondern stattdessen als Benutzereingabe auf der Konsole abgefragt wurde.
  *
- * 2. Anschlioeßend soll folgende, personalisierte Grußbotschaft ausgegeben werden:
+ * 2. Anschließend soll folgende, personalisierte Grußbotschaft ausgegeben werden:
  *
  *    ```txt
  *    Guten Morgen.
