@@ -55,12 +55,12 @@ int main(int argc, char **argv) {
 		switch (key) {
 			case 'l':
 			case 'L':
-				cout << "Der Roboert fährt nach LINKS!" << endl;
-				break;
+				cout << "Der Roboter fährt nach LINKS!" << endl;
+				break;	
 			
 			case 'r':
 			case 'R':
-				cout << "Der Roboert fährt nach RECHTS!" << endl;
+				cout << "Der Roboter fährt nach RECHTS!" << endl;
 				break;
 			
 			case 'e':
