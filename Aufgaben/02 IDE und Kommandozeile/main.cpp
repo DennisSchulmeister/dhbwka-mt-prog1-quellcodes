@@ -12,7 +12,7 @@
  *    Wie heißen Sie? Dagobert Duck					← Benutzereingabe des Namens
  *    ```
  *
- *    Bedenken Sie, dass der Name "Dagobert Duck" nirgendswo im Quellcode fest hinterlegt
+ *    Bedenken Sie, dass der Name "Dagobert Duck" nirgendwo im Quellcode fest hinterlegt
  *    ist, sondern stattdessen als Benutzereingabe auf der Konsole abgefragt wurde.
  *
  * 2. Anschließend soll folgende, personalisierte Grußbotschaft ausgegeben werden:
