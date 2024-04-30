@@ -15,10 +15,10 @@
  * Dieses Verfahren kann man auf unterschiedliche Weise in C++ implementieren. Eine Möglichkeit
  * wäre, ein Array (oder einen Vektor) mit N Elementen zu verwenden, die für die jeweilige Zahl
  * an ihrem Index stehen. Also Index 2 für die Zahl 2, Index 3 für die Zahl 3 usw., wobei man
- * nicht die Zahl sondern ein Boolean speichert, dass mit true/false kodiert, ob an die Zahl
- * eine Primzahl ist. Dieses Verfahren habt aber eine Laufzeit von O(n²).
+ * nicht die Zahl sondern ein Boolean speichert, der mit true/false kodiert, ob die Zahl eine
+ * Primzahl ist.
  *
- * Hier wird deshalb eine andere Version gezeigt, die stattdessen die gefundenen Primzahlen
+ * Hier wird allerdings eine andere Version gezeigt, die stattdessen die gefundenen Primzahlen
  * in einem Vektor abgelegt, wobei der Index hierbei keine Bedeutung hat.
  ***********************************************************************************************/
 
@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
 
 		if (is_prime) {
 			prime_numbers.push_back(i);
-			cout << to_string(i) << " ";
+			cout << i << " ";
 		}
 	}
 
