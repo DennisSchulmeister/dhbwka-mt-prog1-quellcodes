@@ -9,10 +9,13 @@
 
 #include <iostream>
 #include <iomanip>
+//#include <windows.h>
 
 using namespace std;
 
 int main(int argc, char **argv) {
+    //SetConsoleOutputCP(CP_UTF8);
+
     cout << "Spannungsteiler berechnen" << endl;
     cout << "=========================" << endl;
     cout << endl;

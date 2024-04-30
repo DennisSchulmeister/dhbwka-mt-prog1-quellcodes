@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
 
     // Verdeutlichung der reduzierten Genauigkeit von Float
     float f = 0.1;
-    cout << "0,1 als Float: " << setprecision(25) << f << " Ups!" << endl;
+    cout << "0,1 als Float: " << setprecision(25) << f << " Ups!!" << endl;
 
     cout << endl;
 
