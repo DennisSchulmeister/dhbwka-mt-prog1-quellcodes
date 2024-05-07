@@ -1,3 +1,6 @@
 *.o
+*.s
 *.exe
 main
+
+MeineSachen
