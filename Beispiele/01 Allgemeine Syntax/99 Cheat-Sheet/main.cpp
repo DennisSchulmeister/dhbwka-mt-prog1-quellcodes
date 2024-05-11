@@ -1,3 +1,10 @@
+/*
+ * HINWEIS: Dieses Program lässt sich nicht kompilieren. Es handelt sich nur
+ * um eine Sammlung typischer Syntaxelemente von C/C++ als Spickzettel.
+ */
+
+
+
 /**********************************************************************
  * NAME DES PROGRAMMS
  * ==================
@@ -33,15 +40,15 @@ int main(int argc, char **argv) {
 
 
 // Variablendeklarationen
-char zeichen = 'a';
-int ganzzahl = 42;
-long long große_ganzzahl = 456456163156156L;
-float kommazahl_ungenau = 47.11;
-double kommazahl_genau = 8.15;
-bool wahr_falsch = true;
-char *cstring = "Ich bin ein C-String.";
-string cpp_string = {"Ich bin ein C++-String"};
+int       ganzzahl          = 42;
+long long große_ganzzahl    = 456456163156156L;
+float     kommazahl_ungenau = 47.11;
+double    kommazahl_genau   = 8.15;
+bool      wahr_falsch       = true;
 
+char   zeichen    = 'a';
+char*  cstring    = "Ich bin ein C-String.";
+string cpp_string = {"Ich bin ein C++-String"};
 
 
 // Konsolenausgabe

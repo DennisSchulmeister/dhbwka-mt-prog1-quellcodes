@@ -3,7 +3,7 @@
  * ===============================
  * 
  * Dies ist das einfachste Programm, dass Sie in C oder C++ schreiben können. Es beinhaltet
- * einfach eine leere `main`-Funktion, die das Betriebssyytem beim Starten des Programms
+ * einfach eine leere `main`-Funktion, die das Betriebssystem beim Starten des Programms
  * aufrufen kann, die aber nichts macht. Alle unsere Programme werden dieser Vorlage folgen.
  ***********************************************************************************************/
 

@@ -1,6 +1,6 @@
 /***********************************************************************************************
- * Beispiel: Grundlegende Syntax von C und C++
- * ===========================================
+ * Beispiel: Robotersteuerung
+ * ==========================
  * 
  * Dieses Beispiel zeigt die wichtigsten Syntaxelemente, die in einem C/C++-Programm häufig
  * verwendet werden. Unter Anderem sehen wir hier:
