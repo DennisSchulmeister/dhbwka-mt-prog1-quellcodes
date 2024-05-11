@@ -1,8 +1,8 @@
 /***********************************************************************************************
- * Beispiel: Das Sieb des Erastothenes
+ * Beispiel: Das Sieb des Eratosthenes
  * ===================================
  * 
- * Das Sieb des Erastothenes ist ein einfacher Lehrbuchalgorithmus zum Finden aller Primzahlen
+ * Das Sieb des Eratosthenes ist ein einfacher Lehrbuchalgorithmus zum Finden aller Primzahlen
  * kleiner gleich einer Zahl N. Das Verfahren ist ganz einfach:
  *
  *   1. Man notiert alle Ganzzahlen von 2 bis N in einer Liste.
@@ -34,7 +34,7 @@ vector<int> prime_numbers = {};
  * Hauptfunktion des Programms.
  */
 int main(int argc, char **argv) {
-	cout << "Das Sieb des Erastothenes" << endl;
+	cout << "Das Sieb des Eratosthenes" << endl;
 	cout << "=========================" << endl;
 	cout << endl;
 
