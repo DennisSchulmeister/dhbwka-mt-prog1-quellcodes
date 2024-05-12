@@ -1,5 +1,5 @@
 # Mechatronik: Programmieren I - Makefile vom Bauen der Aufgaben und Beispiele
-# Windows-Variante (PowerShell): Programmsuffix .exe, Löschbefehl del
+# Windows-Variante (PowerShell): Programmsuffix .exe, Löschbefehl del, UTF-8 für Konsolenausgabe
 #
 # Aufruf mit: make -f windows.mak ...
 # Außer, Sie benennen die Datei in `Makefile` um. :-)
@@ -38,4 +38,5 @@ clean:
 	del $(PROGRAM) *.o
 
 run: $(PROGRAM)
+	chcp 65001
 	.\$(PROGRAM)

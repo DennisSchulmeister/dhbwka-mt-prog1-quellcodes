@@ -35,7 +35,7 @@ $(PROGRAM): $(OBJS)
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) -o $@ $<
 
 clean:
-	rm $(PROGRAM) *.o
+	$(RM) $(PROGRAM) *.o
 
 run: $(PROGRAM)
 	./$(PROGRAM)

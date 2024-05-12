@@ -8,7 +8,7 @@ Beschreibung
 ------------
 
 Dieses Verzeichnis beinhaltet zwei Makefiles, die zum Bauen der Aufgaben und Beispiele
-verwendet werden können. Dies hat den Vorteil, dass Sie die hierfür notwendigen Befele
+verwendet werden können. Dies hat den Vorteil, dass Sie die hierfür notwendigen Befehle
 nicht einzeln auf der Kommandozeile eingeben müssen. Gleichzeitig funktionieren die
 Makefiles unabhängig von der verwendeten IDE oder dem verwendeten Code-Editor.
 

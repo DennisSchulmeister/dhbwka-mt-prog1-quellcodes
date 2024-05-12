@@ -28,7 +28,7 @@ Falls Sie keine Software auf Ihrem Rechner installieren können, dafür aber ein
 haben, können Sie die Quellcodes unter folgender Adresse auch in der Gitpod Online-IDE bearbeiten:
 [https://gitpod.io/#https://github.com/DennisSchulmeister/dhbwka-mt-prog1-quellcodes](https://gitpod.io/#https://github.com/DennisSchulmeister/dhbwka-mt-prog1-quellcodes)
 
-Kompileren und Ausführen der Quellcodes
+Kompilieren und Ausführen der Quellcodes
 ---------------------------------------
 
 Zwar bieten viele Editoren (und IDEs sowieso) eine eingebaute Möglichkeit, um in C oder C++
@@ -37,7 +37,7 @@ Einstellungen vorgenommen werden, die dann nur mit der einen IDE bzw. dem einen 
 Die Aufgaben und Beispiele beinhalten daher stattdessen ein `Makefile`, das mit dem Konsolenprogramm
 `make` ausgeführt werden kann und somit unabhängig von der IDE oder dem Code-Editor funktioniert.
 
-Zunächst muss die Datei `Makefile` im Hauptverzeichnis des Respositories angepasst werden, je nachdem,
+Zunächst muss die Datei `Makefile` im Hauptverzeichnis des Repositories angepasst werden, je nachdem,
 welches Betriebssystem Sie verwenden:
 
 * **Windows:** Keine Anpassung erforderlich

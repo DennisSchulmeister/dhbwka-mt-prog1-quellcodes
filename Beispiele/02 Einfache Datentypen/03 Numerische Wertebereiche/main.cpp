@@ -3,7 +3,7 @@
  * ==================================
  * 
  * Die klassischen Datentypen char, short, int ... haben keine exakt definierte Größe in C/C++,
- * da der Sprachstandard jeweils nur eine Mindesgröße und damit Wertebereiche zusichert. Diese
+ * da der Sprachstandard jeweils nur eine Mindestgröße und damit Wertebereiche zusichert. Diese
  * Angaben stammen aber aus längst vergangenen Zeiten mehrere CPU-Generationen zurückliegend.
  * Die tatsächlichen Wertebereiche hängen hingen von CPU-Architektur und Compiler ab und können
  * über verschiedene Konstanten abgefragt werden. Dieses Beispiel gibt sie auf der Konsole aus.
