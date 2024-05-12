@@ -9,7 +9,7 @@
  *
  * Das Beispiel zeigt zwei Varianten:
  *
- *   1) Einfache alle Arten von Fehlern abfangen, da sowieso nur Fehleingaben vorkommen können.
+ *   1) Einfach alle Arten von Fehlern abfangen, da sowieso nur Fehleingaben vorkommen können.
  *   2) Genau die Art von Fehler abfangen, die hier tatsächlich auftritt.
  *
  * Variante 2 ist eher für große Programme relevant, in denen viel mit unterschiedlichen Arten

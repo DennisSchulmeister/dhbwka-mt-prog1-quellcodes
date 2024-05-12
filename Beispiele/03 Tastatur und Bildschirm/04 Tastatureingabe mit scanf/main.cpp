@@ -3,7 +3,7 @@
  * ===================================
  * 
  * Tastatureingaben werden in C häufig mit der scanf()-Funktion realisiert, die allerdings nicht
- * ganz einfach zu nutzen ist. Sie erstartet zwei Parameter:
+ * ganz einfach zu nutzen ist. Sie erwartet zwei Parameter:
  *
  *   1) Einen Formatstring
  *   2) Speicheradresse einer Variable
@@ -12,7 +12,7 @@
  * sofern er dem Format entspricht, in die Variable geschrieben. Allerdings gibt es hier viele
  * Stolpersteine:
  *
- *   - Die Formatstrings können schnell kompliziert werden.
+ *   - Der Formatstring kann schnell unverständlich werden: "%20[^ABC]s" --> ?!?!?
  *
  *   - Bei C-Strings muss die max. Anzahl Zeichen angeben werden, damit Leerzeichen korrekt
  *     eingelesen werden und die Eingabe nicht beim ersten Leerzeichen abbricht. Außerdem

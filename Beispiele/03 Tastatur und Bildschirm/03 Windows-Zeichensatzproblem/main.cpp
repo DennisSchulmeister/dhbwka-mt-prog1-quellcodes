@@ -6,7 +6,7 @@
  * Zeichensätze und der historischen Entwicklung von Unicode hingewiesen. Diese Probleme machen
  * sich für Programmieranfänger*innen vor allem bei Konsolenausgaben unter Windows bemerkbar,
  * da die Beispiele mit UTF-8 arbeiten, das Konsolenfenster unter Windows aus Gründen der
- * Kompatibilität aber mit einem anderen Zeichensatz arbeitet.
+ * Kompatibilität aber einen anderen Zeichensatz verwendet.
  *
  * Damit die Anzeige stimmt, muss der Zeichensatz auf der Konsole mit folgendem Befehl
  * auf UTF-8 umgestellt werden, bevor das Programm gestartet wird:
@@ -14,7 +14,7 @@
  *    chcp 65001
  *
  * Alternativ könnte das Programm den Zeichensatz der Konsole ändern oder, eigentlich korrekt,
- * die Windows API nutzen, um den eingestellten Zeichensatz abzufragen und die Text vor der
+ * die Windows API nutzen, um den eingestellten Zeichensatz abzufragen und die Texte vor der
  * Anzeige umzuwandeln. Damit wäre das Programm aber nicht mehr "plattformunabhängig" und
  * liese sich nur unter Windows compilieren und nutzen. Zwar ließen sich die betroffenen
  * Codezeilen mit #ifdef betriebssystemabhängig abweichend definieren. Für uns lohnt sich der

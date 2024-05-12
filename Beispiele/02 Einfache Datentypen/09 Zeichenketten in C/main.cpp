@@ -14,7 +14,7 @@
  * von Pufferüberläufen, womit gemeint ist, dass man mehr Zeichen in einen String schreibt, als
  * dieser eigentlich zur Verfügung stellt, wodurch ausversehen (oder absichtlich ?!?) andere
  * Daten des Programms oder im schlimmsten Fall sogar der Programmcode selbst überschrieben
- * werden. Sehr viele Sicherheitslücken und bekannten Programmen beruhen auf diesem Prinzip!
+ * werden. Sehr viele Sicherheitslücken von bekannten Programmen beruhen auf diesem Prinzip!
  *
  * Ein weiteres Problem ergibt sich aus der verwendeten Textcodierung, dem sog. Zeichensatz.
  * Denn ein String ist einfach eine Folge von Bytes, die gemäß einem Zeichensatz interpretiert

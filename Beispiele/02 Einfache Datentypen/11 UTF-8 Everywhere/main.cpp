@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
     cout << endl;
 
     // Bitmuster der einzelnen Bytes anzeigen
-    for (char &c : str) cout << bitset<8>(c) << " ";
+    for (char &c : str) { cout << bitset<8>(c) << " "; }
     cout << endl;
 
     // Bitmuster als vorzeichenlose Ganzzahlen anzeigen
@@ -110,13 +110,13 @@ size_t multi_byte_codepoints(string str) {
 
 /**
  * Hilfsfunktion zum Zählen aller Codepoints in einem UTF-8-String. Oft entspricht dies
- * der Anzahl Zeichen in dem String. Dies stimm allerdings nicht immer, da Unicode viele
+ * der Anzahl Zeichen in dem String. Dies stimmt allerdings nicht immer, da Unicode viele
  * "Combining Characters" kennt, die das vorausgehende Zeichen modifizieren, selbst aber
  * unsichtbar sind. Vgl. https://en.wikipedia.org/wiki/Combining_character
  *
- * In der Praxis ist aber weit seltener ein Problem, als man denkt. Meistens reicht es,
- * mit der Anzahl Bytes zu arbeiten und nicht einmal die UTF-8 Codepoints zu zählen,
- * wenn man nicht gerade eine auf Text spezialisierte Anwendung wie programmiert.
+ * In der Praxis ist das aber weit seltener ein Problem, als man denkt. Meistens reicht es,
+ * mit der Anzahl Bytes zu arbeiten und nicht einmal die UTF-8 Codepoints zu zählen, wenn
+ * man nicht gerade eine auf Text spezialisierte Anwendung programmiert.
  */
 size_t all_codepoints(string str) {
     size_t result = 0;

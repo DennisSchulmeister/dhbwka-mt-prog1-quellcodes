@@ -17,7 +17,7 @@ constexpr double pi2 = 104348.0 / 33215.0;      // Eine echte Konstante, die ber
 int main(int argc, char **argv) {
     cout << setprecision(25);
     cout << "#define PI 3.14159..........................: " << PI  << endl;
-    cout << "const double pi = 3.14.159..................: " << pi  << endl;
+    cout << "const double pi = 3.14159...................: " << pi  << endl;
     cout << "constexpr double pi2 = 104348.0 / 33215.0...: " << pi2 << endl;
     cout << endl;
     cout << "Man beachte zusätzlich die Rundungsfehler der binären Gleitkommazahlen. :-)" << endl;

@@ -6,7 +6,7 @@
  * und ein paar Hilfsfunktionen wie stoi(), stod() usw. weitgehend lösen. getline() liest dabei
  * immer eine vollständige Zeile ein, die vor dem mit ENTER ausgelösten Zeilenumbruch endet.
  * Die Funktionen stoX() interpretieren diesen String dann, entsprechend dem letzten Buchstaben
- * in ihrem Namen als Integer, Float, Double, etc.
+ * in ihrem Namen als Integer, Float, Double, etc. Eselsbrücke: String to X
  *
  * Dadurch ist das Programm wesentlich robuster bei Fehleingaben. Ein kleines Problem gibt es
  * allerdings noch, das wir erst im nächsten Beispiel lösen werden. Aber probieren Sie es

@@ -13,9 +13,9 @@
  *
  * In C kommt hier häufig die printf()-Funktion zum Einsatz. Sie erwartet im ersten Parameter
  * einen String mit dem anzuzeigenden Text, sowie beliebig viele weitere Parameter mit in den
- * Text zu integrierten Variablen. Im Text müssen hierfür mit dem Prozenzeichen eingeleitete
+ * Text zu integrierten Variablen. Im Text müssen hierfür mit dem Prozentzeichen eingeleitete
  * Platzhalter definiert werden, so später die Werte stehen sollen. Die Platzhalter definieren
- * dabei, wie die Wert formatiert werden sollen.
+ * dabei, wie die Werte formatiert werden sollen.
  *
  * Vgl. https://cplusplus.com/reference/cstdio/printf/
  ***********************************************************************************************/
