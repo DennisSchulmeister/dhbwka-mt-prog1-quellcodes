@@ -47,8 +47,9 @@ constexpr double pi    = 104348.0 / 33215.0;
 constexpr int    k_max = 24;
 
 int main(int argc, char **argv) {
-    cout << endl;
     cout << setprecision(20);
+    
+    cout << endl;
     cout << "π ≈ 104348 / 33215 ≈ " << pi << endl;
     cout << endl;
     cout << "k   Leibniz-Reihe          Abweichung zu π" << endl;
