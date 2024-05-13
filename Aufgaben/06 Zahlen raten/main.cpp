@@ -3,7 +3,7 @@
  * =====================
  * 
  * Recherchieren Sie im Internet, wie Sie mit C/C++ zufällige Ganzzahlen ermitteln können.
- * Anschließend schreiben Sie eine Ratespiel, bei dem das Programm eine zufällige Zahl zwischen
+ * Anschließend schreiben Sie ein Ratespiel, bei dem das Programm eine zufällige Zahl zwischen
  * null und 25 ermittelt, die man erraten muss. Hierzu soll das Programm in einer Schleife eine
  * Zahl über die Tastatur abfragen und daraufhin einen Hinweis anzeigen, ob die eingegebene
  * Zahl zu groß, zu niedrig oder genau richtig ist. Sobald die richtige Zahl eingegeben wurde,
@@ -32,8 +32,7 @@
  * also "in einem Versuch" statt "in X Versuchen" ausgibt, wenn die Anzahl eins ist.
  *
  * Achten Sie darauf, Eingabefehler sauber abzufangen. Grob falsche Eingaben sollen einfach
- * ignoriert und als falscher Rateversuch gezählt werden. Hierzu können Sie die Anweisung
- * continue benutzen, um wieder an den Anfang der Schleife zu springen.
+ * ignoriert und als falscher Rateversuch gezählt werden.
  *
  * HINWEIS: Hier bietet es sich an, die beiden Anweisungen `break` und `continue` zu verwenden.
  *
