@@ -22,21 +22,23 @@
  * in einem Vektor abgelegt, wobei der Index hierbei keine Bedeutung hat.
  ***********************************************************************************************/
 
-#include <iostream>
-#include <vector>
+#include <iostream>     // std::cout, std::cin, ...
+#include <vector>       // std::vector
 
 using namespace std;
 
 constexpr int n = 50;
-vector<int> prime_numbers = {};
 
 /**
  * Hauptfunktion des Programms.
  */
 int main(int argc, char **argv) {
+	cout << endl;
 	cout << "Das Sieb des Eratosthenes" << endl;
 	cout << "=========================" << endl;
 	cout << endl;
+
+	vector<int> prime_numbers = {};
 
 	for (int i = 2; i < n; i++) {
 		bool is_prime = true;
