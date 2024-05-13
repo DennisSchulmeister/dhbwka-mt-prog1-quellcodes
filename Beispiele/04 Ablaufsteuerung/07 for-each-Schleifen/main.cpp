@@ -8,7 +8,7 @@
  *
  * Später wurde jeder dieser Programmiersprachen unabhängig voneinander eine for/each-Schleife
  * hinzugefügt, mit der man über die Einträge einer Liste (oder einer anderen aufzählbaren
- * Datenstruktur)iterieren kann. Die Syntax unterscheidet sich von Sprache zu Sprache. In C++
+ * Datenstruktur) iterieren kann. Die Syntax unterscheidet sich von Sprache zu Sprache. In C++
  * lautet sie:
  *
  *    for (DEKLARATION : DATENSTRUKTUR) ANWEISUNG
@@ -35,7 +35,7 @@
  *
  *    for (string word : words) ...
  *
- * Tatsächlich steht hier aber:
+ * Tatsächlich steht dort aber:
  *
  *    for (auto word : words) ...
  *
