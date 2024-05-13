@@ -17,7 +17,7 @@
  ***********************************************************************************************/
 
 #include <iostream>     // std::cout, std::cin, ...
-#include <string>       // std::getline
+#include <string>       // std::string, std::getline, ...
 
 using namespace std;
 

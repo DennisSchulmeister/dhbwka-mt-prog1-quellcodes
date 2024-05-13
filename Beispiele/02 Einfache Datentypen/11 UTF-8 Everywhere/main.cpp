@@ -34,7 +34,7 @@
  ***********************************************************************************************/
 
 #include <iostream>     // std::cout, std::cin, ...
-#include <string>       // std::string
+#include <string>       // std::string, std::getline, ...
 #include <bitset>       // std::bitset
 
 using namespace std;

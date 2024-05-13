@@ -8,7 +8,7 @@
  * daher wesentlich öfters Rundungsfehler als Kommazahlen vom Typ double.
  ***********************************************************************************************/
 #include <iostream>     // std::cout, std::cin, ...
-#include <iomanip>      // std::setprecission
+#include <iomanip>      // std::setprecision
 
 using namespace std;
 

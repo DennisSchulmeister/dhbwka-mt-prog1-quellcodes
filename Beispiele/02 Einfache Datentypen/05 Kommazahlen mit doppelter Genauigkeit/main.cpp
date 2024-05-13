@@ -9,7 +9,7 @@
  * aufaddieren können!
  ***********************************************************************************************/
 #include <iostream>     // std::cout, std::cin, ...
-#include <iomanip>      // std::setprecission
+#include <iomanip>      // std::setprecision
 #include <cmath>        // sqrt
 
 using namespace std;
