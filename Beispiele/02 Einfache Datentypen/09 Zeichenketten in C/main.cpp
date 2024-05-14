@@ -29,8 +29,8 @@ using namespace std;
 
 int main(int argc, char **argv) {
     char buffer[100] = {0};                         // Puffer zur Aufnahme des zusammengefügten Strings
-    char word1[]     = u8"Hallo ihr schönen ";      // Erster Teilstring
-    char word2[]     = u8"Strings!";                // Zweiter Teilstring
+    char word1[]     = "Hallo ihr schönen ";        // Erster Teilstring
+    char word2[]     = "Strings!";                  // Zweiter Teilstring
 
     strncat(buffer, word1, sizeof(buffer) - 1);     // Strings zusammenfügen unter Berücksichtigung der Puffer-Größe.
     strncat(buffer, " ",   sizeof(buffer) - 1);     // Dies ist die "sichere" Variante von strcat().
@@ -42,5 +42,5 @@ int main(int argc, char **argv) {
     cout << "\"" << buffer << " \" (" << len << " von " << (sizeof(buffer) - 1) << " Bytes)" << endl;
 
     cout << endl;
-    cout << u8"HINWEIS: Strings zählen Bytes, nicht Zeichen! Zählen Sie nach ..." << endl;
+    cout << "HINWEIS: Strings zählen Bytes, nicht Zeichen! Zählen Sie nach ..." << endl;
 }

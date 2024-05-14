@@ -18,6 +18,7 @@ int main(int argc, char **argv) {
     char c; short s; int i; long l; long long ll;
     float f; double d; long double ld;
 
+    cout << endl;
     cout << "Vorzeichenbehaftete Ganzzahlen" << endl;
     cout << "==============================" << endl;
     cout << endl;
