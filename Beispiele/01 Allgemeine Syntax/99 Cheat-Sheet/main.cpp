@@ -14,7 +14,13 @@
  * DATUM, EIGENER NAME, E-MAIL
  *********************************************************************/
 
-#include <iostream>
+#include <iostream>     // std::cout, std::cin, ...
+#include <iomanip>      // std::setprecision
+#include <string>       // std::string, std::getline, ...
+#include <vector>       // std::vector
+#include <fstream>      // std::ifstream, std::ofstream, ...
+#include <cmath>        // sin, ...
+
 using namespace std;
 
 int main(int argc, char **argv) {
@@ -55,9 +61,22 @@ string cpp_string = {"Ich bin ein C++-String"};
 cout << "Hier kommt eine Zahl: " << kommazahl_genau << "." << endl;
 
 
-// Tastatureingabe
+// Tastatureingabe (fehleranfällig)
 cout "Bitte eine ganze Zahl eingeben: ";
 cin >> ganzzahl;
+
+
+// Tastatureingabe (sicher)
+string buffer;
+double n;
+
+try {
+    cout "Bitte eine Kommazahl eingeben: ";
+    getline(cin, buffer);
+    n = stod(buffer);
+} catch (...) {
+    cerr << "Scherzkeks! Du hast keine Zahl eingegeben."
+}
 
 
 // Fallunterscheidung
