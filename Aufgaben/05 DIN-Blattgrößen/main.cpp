@@ -6,7 +6,7 @@
  * 5:7 bzw. genau 1∶√2 entspricht. Für die nächst kleineren Formate (DIN A1, DIN A2, …) halbiert
  * man jeweils die längere Seite.
  *
- * Schreiben Sie ein Programm, dass ausgehend von DIN A0 alle Maße bis DIN A9 ausrechnet und
+ * Schreiben Sie ein Programm, das ausgehend von DIN A0 alle Maße bis DIN A9 ausrechnet und
  * tabellarisch auf der Konsole ausgibt. Die Programmausgabe soll in etwa so aussehen:
  *
  *     Format  Breite  Länge
@@ -17,7 +17,7 @@
  *     DIN A2  420      595
  *     ...
  *
- * HINWEIS: Am einfachsten nutzen Sie eine for-Schleife, die von null bis neun zählt sowie
+ * HINWEIS: Am einfachsten nutzen Sie eine for-Schleife, die von null bis neun zählt, sowie
  * zwei außerhalb der Schleife definierte Variablen für Breite und Länge. Pluspunkte gibt es
  * für die rechtsbündige Ausrichtung der Zahlen.
  *

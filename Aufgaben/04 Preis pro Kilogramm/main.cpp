@@ -15,6 +15,12 @@
  * Achten Sie darauf, Eingabefehler sauber abzufangen. Das Programm soll mit einer sprechenden
  * Fehlermeldung beendet werden, wenn eine grob falsche Eingabe, wie ein Text wo Zahlen erwartet
  * werden, gemacht werden.
+ *
+ * Ein typischer Programmlauf könnte wie folgt aussehen:
+ *
+ *    Preis in €........: 5.4
+ *    Gewicht in g......: 500
+ *    Preis in € / kg...: 10.8
  ***********************************************************************************************/
 
 #include <iostream>     // std::cout, std::cin, ...

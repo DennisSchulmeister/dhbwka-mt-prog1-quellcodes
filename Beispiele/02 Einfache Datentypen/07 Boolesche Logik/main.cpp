@@ -17,7 +17,8 @@ void print_value(bool value, string name, string description) {
 }
 
 int main(int argc, char **argv) {
-
+    cout << endl;
+    
     bool value = false;
     print_value(value,            "value..............:", "");
     print_value(!value,           "!value.............:", "(Logisches NOT - Negierung)");

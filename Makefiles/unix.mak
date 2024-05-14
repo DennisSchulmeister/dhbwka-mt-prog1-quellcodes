@@ -29,10 +29,10 @@ $(PROGRAM): $(OBJS)
 	$(EXTRA_CMDS)
 
 %.o: %.cpp
-	$(CXX) -c $(CFLAGS) $(CXXFLAGS) $(CPPFLAGS) -o $@ $<
+	$(CXX) -c $(CFLAGS) $(CXXFLAGS) $(CPPFLAGS) -g -o $@ $<
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $(CPPFLAGS) -o $@ $<
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) -g -o $@ $<
 
 clean:
 	$(RM) $(PROGRAM) *.o
