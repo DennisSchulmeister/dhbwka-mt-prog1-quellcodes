@@ -1,6 +1,9 @@
 ########################################################################################################
 # Mechatronik: Programmieren I - Makefile vom Bauen der Aufgaben und Beispiele
 # Kombiniertes Makefile für Windows PowerShell (Default), Linux, macOS und Unix
+# Kopiervorlage die 1:1 in die Projektverzeichnisse übernommen werden kann.
+#
+# Version 1.0 vom 14.05.2024, 19:10 Uhr
 ########################################################################################################
 
 
@@ -70,5 +73,5 @@ clean:
 ifeq ($(OS),WINDOWS)
 	del $(PROGRAM) *.o *.d
 else
-	rm ${PROGRAM} *.o *.d
+	rm -f ${PROGRAM} *.o *.d
 endif
