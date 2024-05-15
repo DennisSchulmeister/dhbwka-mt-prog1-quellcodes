@@ -22,14 +22,14 @@
  *
  * Die allgemeine Syntax von switch/case ist daher:
  *
- *     switch (AUSDRUCK1) {
- *         case AUSDRUCK2:
+ *     switch (AUSDRUCK) {
+ *         case KONSTANTE1:
  *             ANWEISUNG;
  *             ANWEISUNG;
  *             ...
  *             break;
  *
- *         case AUSDRUCK3:
+ *         case KONSTANTE2:
  *             ANWEISUNG;
  *             ANWEISUNG;
  *             ...
@@ -43,7 +43,8 @@
  *             ...
  *     }
  *
- * Dabei wird das Ergebnis von AUSDRUCK1 mit den anderen Ausdrücken auf Gleichheit verglichen
+ * Dabei wird das Ergebnis von AUSDRUCK mit den Konstanten (genauer gesagt, Ausdrücke, die
+ * einen konstanten, zur Compilierzeit bekannten Wert liefern) auf Gleichheit verglichen
  * und der erste zutreffende case-Zweig ausgeführt. Trifft keiner zu, wird der default-Zweig
  * ausgeführt. Wie immer kann der default-Zweig entfallen.
  *
