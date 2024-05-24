@@ -20,7 +20,7 @@
  *     │     ┌──┤░░│
  *     │     │░░│░░├──┐
  *     │     │░░│░░│░░│
- +     │  ┌──┤░░│░░│░░│
+ *     │  ┌──┤░░│░░│░░│
  *     │  │░░│░░│░░│░░├──┐
  *     ├──┤░░│░░│░░│░░│░░├──┐
  *     │░░│░░│░░│░░│░░│░░│░░│
@@ -42,7 +42,7 @@ constexpr double x_max = 2.5;       // Obere Grenze von x für die Berechnung
 constexpr double x_min = 0;         // Untere Grenze von x für die Berechnung
 constexpr double y_max = 1.5;       // Obere Grenze von y für den Plot
 constexpr double y_min = 0;         // Untere Grenze von y für den Plot
-constexpr double step  = 0.05;      // Intervalgröße für Berechnung und Plot
+constexpr double step  = 0.05;      // Intervallgröße für Berechnung und Plot
 
 
 int main(int argc, char **argv) {

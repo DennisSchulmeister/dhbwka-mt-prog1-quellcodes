@@ -1,9 +1,9 @@
 ########################################################################################################
-# Mechatronik: Programmieren I - Makefile vom Bauen der Aufgaben und Beispiele
+# Mechatronik: Programmieren I - Makefile zum Bauen der Aufgaben und Beispiele
 # Kombiniertes Makefile für Windows PowerShell (Default), Linux, macOS und Unix
-# Kopiervorlage die 1:1 in die Projektverzeichnisse übernommen werden kann.
+# Kopiervorlage, die 1:1 in die Projektverzeichnisse übernommen werden kann.
 #
-# Version 1.0 vom 14.05.2024, 19:10 Uhr
+# Version 1.01 vom 24.05.2024, 13:39 Uhr
 ########################################################################################################
 
 
