@@ -23,41 +23,7 @@
  * sollen die Farben Rot, Grün und Blau besitzen und in einer Zeile nebeneinander stehen.
  * Schreiben Sie hierfür ein Programm, das folgende Daten in eine Textdatei namens test.ppm
  * schreibt:
- * * d) Zum Schluss wollen wir einen schönen himmelblauen, linearen Farbverlauf berechnen und
- * dabei Strukturen in C/C++ kennenlernen. Denn Strukturen ermöglichen es uns, mehrere Werte,
- * die zusammengehören, in eine Variable zu packen. Beispielsweise die Farbwerte eines Pixels.
- * Fügen Sie hierfür vor der main()-Funktion folgende Zeilen ein:
  *
- *     struct rgb {
- *         int r;
- *         int g;
- *         int b;
- *     };
- *
- * Sie definieren einen neuen Datentyp namens "rgb" mit den drei Integer-Werten r, g, und b.
- * Damit können wir nun zwei Variablen mit der Start- und der Zielfarbe des Farbverlaufs
- * anlegen:
- *
- *     rgb start = {30, 140, 210};
- *     rgb end = {210, 240, 255};
- *
- * Mit start.r, start.g, start.b sowie end.r, end.g, end.b kann auf die einzelnen Farbanteile
- * zugegriffen werden. Dies benötigen wir für folgende Hilfsvariable:
- *
- *     rgb delta = {
- *         end.r - start.r,
- *         end.g - start.g,
- *         end.b - start.b
- *     };
- *
- * Der Farbverlauf kann dann mit folgenden Formeln berechnet werden:
- *
- *     int r = start.r + (1.0 * delta.r * y / height);
- *     int g = start.g + (1.0 * delta.g * y / height);
- *     int b = start.b + (1.0 * delta.b * y / height);
- *
- * HINWEIS: Hier wird es zwar nicht benötigt, aber die Elemente einer Struktur können selbst
- * auch Strukturen oder andere zusammengesetzte Datentypen (Arrays, Vektoren, ...) sein.
  *     P3
  *     3 1
  *     255
@@ -86,7 +52,7 @@
  *     int width = 320, height = 240;
  *     ...
  *
- * Entfernen Sie anschließend die Zeilen, in welche die drei Testpixel geschrieben werden und
+ * Entfernen Sie anschließend die Zeilen, in denen die drei Testpixel geschrieben werden und
  * ersetzen Sie diese durch zwei geschachtelte for-Schleifen. Die äußere Schleife soll die
  * Y-Werte (Zeilen) und die innere Schleife die X-Werte (Spalten) zählen.
  *
@@ -123,7 +89,41 @@
  * Sie definieren einen neuen Datentyp namens "rgb" mit den drei Integer-Werten r, g, und b.
  * Damit können wir nun zwei Variablen mit der Start- und der Zielfarbe des Farbverlaufs
  * anlegen:
+ * * * d) Zum Schluss wollen wir einen schönen himmelblauen, linearen Farbverlauf berechnen und
+ * dabei Strukturen in C/C++ kennenlernen. Denn Strukturen ermöglichen es uns, mehrere Werte,
+ * die zusammengehören, in eine Variable zu packen. Beispielsweise die Farbwerte eines Pixels.
+ * Fügen Sie hierfür vor der main()-Funktion folgende Zeilen ein:
  *
+ *     struct rgb {
+ *         int r;
+ *         int g;
+ *         int b;
+ *     };
+ *
+ * Sie definieren einen neuen Datentyp namens "rgb" mit den drei Integer-Werten r, g, und b.
+ * Damit können wir nun zwei Variablen mit der Start- und der Zielfarbe des Farbverlaufs
+ * anlegen:
+ *
+ *     rgb start = {30, 140, 210};
+ *     rgb end = {210, 240, 255};
+ *
+ * Mit start.r, start.g, start.b sowie end.r, end.g, end.b kann auf die einzelnen Farbanteile
+ * zugegriffen werden. Dies benötigen wir für folgende Hilfsvariable:
+ *
+ *     rgb delta = {
+ *         end.r - start.r,
+ *         end.g - start.g,
+ *         end.b - start.b
+ *     };
+ *
+ * Der Farbverlauf kann dann mit folgenden Formeln berechnet werden:
+ *
+ *     int r = start.r + (1.0 * delta.r * y / height);
+ *     int g = start.g + (1.0 * delta.g * y / height);
+ *     int b = start.b + (1.0 * delta.b * y / height);
+ *
+ * HINWEIS: Hier wird es zwar nicht benötigt, aber die Elemente einer Struktur können selbst
+ * auch Strukturen oder andere zusammengesetzte Datentypen (Arrays, Vektoren, ...) sein.
  *     rgb start = {30, 140, 210};
  *     rgb end = {210, 240, 255};
  *

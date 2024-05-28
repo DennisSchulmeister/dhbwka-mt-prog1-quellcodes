@@ -39,7 +39,7 @@
  * Durchläufen.
  *
  * Öffnen Sie die Datei in Audacity, indem Sie dort "File → Import → Raw Data…" auswählen.
- * In dem daraufhin erscheinenden Popup-Fenster wählen Sie folgende Werte aus:
+ * Im daraufhin erscheinenden Popup-Fenster wählen Sie folgende Werte aus:
  *
  *     Encoding:          64-bit float
  *     Byte order:        Default endianess
@@ -49,7 +49,7 @@
  *     Sample rate:       44100 Hz
  *
  * b) Auf dieser Grundlage können wir nun etwas spielen. Zunächst erstellen wir eine neue
- * Funktion osc(double f, double t), in welche wir die Berechnung des nächsten Samples
+ * Funktion double osc(double f, double t), in welche wir die Berechnung des nächsten Samples
  * auslagern. Der Name deutet darauf hin, dass es sich um einen Oszillator (Signalgenerator)
  * mit periodischer Schwingungsform handelt. Um den Sound etwas interessanter zu machen,
  * synthetisieren wir dabei eine Rechteckfunktion:
@@ -77,12 +77,12 @@
  *     double sample = osc(f * progress, t) * 0.5;
  *
  * Kopieren Sie anschließend die for-Schleife und lassen Sie den Sweep wieder rückwärts auf
- * 0 Hz zulaufen. TIPP: Der Inhalt der Schleife muss nicht geändert werden, nur ihre drei
+ * 0 Hz zulaufen. TIPP: Der Inhalt der Schleife muss nicht geändert werden, nur die drei
  * Ausdrücke in den runden Klammern.
  *
  * c) Abschließend wollen wir unser kleines Soundprogramm so abändern, dass es eine kleine
- * Melodie berechnet. Diese speichern wir hierfür ein folgender Datenstruktur (außerhalb der
- * main()-Methode):
+ * Melodie berechnet. Diese speichern wir hierfür ein folgender Datenstruktur außerhalb der
+ * main()-Methode:
  *
  *    struct tone {
  *        double frequency_hz;
@@ -108,7 +108,7 @@
  *     }
  *
  * Innerhalb dieser Schleife muss dann die bisherige for-Schleife stehen, wobei Sie die Frequenz
- * und die Datei aus den beiden Variablen note.frequency_hz und note.duration_s erhalten.
+ * und Dauer aus den beiden Variablen note.frequency_hz und note.duration_s erhalten.
  ***********************************************************************************************/
 
 #include <iostream>     // std::cout, std::cin, ...

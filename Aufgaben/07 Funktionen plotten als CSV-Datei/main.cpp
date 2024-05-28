@@ -42,7 +42,7 @@
  *
  * Hier wird eine C/C++-Funktion mit dem Namen "polynom" definiert, die einen Parameter vom Typ
  * double mit dem Namen "x" übergeben bekommt und einen double-Wert als Ergebnis liefert.
- * Dort, wo bisher die Berechnung der Formal stand, können Sie stattdessen die neue Funktion
+ * Dort, wo bisher die Berechnung der Formel stand, können Sie stattdessen die neue Funktion
  * aufrufen. In etwa so:
  *
  *     double y = polynom(x);
