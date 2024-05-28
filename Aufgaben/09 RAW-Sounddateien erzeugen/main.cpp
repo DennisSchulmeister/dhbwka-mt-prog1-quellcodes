@@ -68,7 +68,7 @@
  * Tauschen Sie die Formel in der for-Schleife gegen einen Aufruf der neuen Funktion aus und
  * hören Sie sich das Ergebnis in Audacity an.
  *
- * ACHTUNG: Ton leiste stellen! Vor allem, wenn Sie Kopfhörer aufhaben!
+ * ACHTUNG: Ton leise stellen! Vor allem, wenn Sie Kopfhörer aufhaben!
  *
  * Passen Sie das Programm anschließend so an, dass ein Frequenzdurchlauf (englisch: sweep)
  * generiert wird, indem Sie die Frequenz mit der Zeit multiplizieren:

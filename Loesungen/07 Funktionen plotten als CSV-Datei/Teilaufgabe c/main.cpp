@@ -35,7 +35,7 @@
  *     file << "x;y" << endl;
  *
  *     // Variablen x und y in die Datei schreiben
- *     file << x << ";" << x << endl;
+ *     file << x << ";" << y << endl;
  *
  *     // Datei ordentlich schließen
  *     file.close();
