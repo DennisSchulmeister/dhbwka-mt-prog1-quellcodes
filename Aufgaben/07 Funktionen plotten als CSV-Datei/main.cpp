@@ -10,7 +10,7 @@
  *
  * a) In der ersten Version soll das Programm die Werte der Funktion y = 2x² + x³ - ½ berechnen
  * und tabellarisch ausgeben. Dabei sollen der Wertebereich von x sowie die Schrittweite am
- * Anfang abgefragt werden werden. Ein beispielhafter Ablauf könnte daher so aussehen:
+ * Anfang abgefragt werden. Ein beispielhafter Ablauf könnte daher so aussehen:
  *
  *     Beginn bei x = -3
  *       Ende bei x = 1.5
