@@ -38,7 +38,7 @@
  *     file <<  "P3" << endl;    // Neue Zeile in die Datei schreiben
  *     file.close();             // Datei ordentlich schließen
  *
- * Versuchen Sie die Datei in einem Grafikprogramm anzuzeigen. Zoomen Sie ganz nah ran, um die
+ * Versuchen Sie, die Datei in einem Grafikprogramm anzuzeigen. Zoomen Sie ganz nah ran, um die
  * einzelnen Pixel zu sehen.
  *
  * b) Nachdem dies nun geklappt hat, wollen wir eine etwas ansprechendere Grafik generieren:
@@ -56,7 +56,7 @@
  * ersetzen Sie diese durch zwei geschachtelte for-Schleifen. Die äußere Schleife soll die
  * Y-Werte (Zeilen) und die innere Schleife die X-Werte (Spalten) zählen.
  *
- * Schreiben Sie innerhalb der inneren Schleifen folgende Farbwerte in die Datei:
+ * Schreiben Sie innerhalb der inneren Schleife folgende Farbwerte in die Datei:
  *
  *    int r = 255.0 * x / width;
  *    int g = 255.0 * y / height;
@@ -89,41 +89,7 @@
  * Sie definieren einen neuen Datentyp namens "rgb" mit den drei Integer-Werten r, g, und b.
  * Damit können wir nun zwei Variablen mit der Start- und der Zielfarbe des Farbverlaufs
  * anlegen:
- * * * d) Zum Schluss wollen wir einen schönen himmelblauen, linearen Farbverlauf berechnen und
- * dabei Strukturen in C/C++ kennenlernen. Denn Strukturen ermöglichen es uns, mehrere Werte,
- * die zusammengehören, in eine Variable zu packen. Beispielsweise die Farbwerte eines Pixels.
- * Fügen Sie hierfür vor der main()-Funktion folgende Zeilen ein:
  *
- *     struct rgb {
- *         int r;
- *         int g;
- *         int b;
- *     };
- *
- * Sie definieren einen neuen Datentyp namens "rgb" mit den drei Integer-Werten r, g, und b.
- * Damit können wir nun zwei Variablen mit der Start- und der Zielfarbe des Farbverlaufs
- * anlegen:
- *
- *     rgb start = {30, 140, 210};
- *     rgb end = {210, 240, 255};
- *
- * Mit start.r, start.g, start.b sowie end.r, end.g, end.b kann auf die einzelnen Farbanteile
- * zugegriffen werden. Dies benötigen wir für folgende Hilfsvariable:
- *
- *     rgb delta = {
- *         end.r - start.r,
- *         end.g - start.g,
- *         end.b - start.b
- *     };
- *
- * Der Farbverlauf kann dann mit folgenden Formeln berechnet werden:
- *
- *     int r = start.r + (1.0 * delta.r * y / height);
- *     int g = start.g + (1.0 * delta.g * y / height);
- *     int b = start.b + (1.0 * delta.b * y / height);
- *
- * HINWEIS: Hier wird es zwar nicht benötigt, aber die Elemente einer Struktur können selbst
- * auch Strukturen oder andere zusammengesetzte Datentypen (Arrays, Vektoren, ...) sein.
  *     rgb start = {30, 140, 210};
  *     rgb end = {210, 240, 255};
  *
