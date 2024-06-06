@@ -1,5 +1,5 @@
 /***********************************************************************************************
- * Beispiel: Unterprogramme und Funktionen
+ * Beispiel: Vorwärtsdeklarationen richtig
  * =======================================
  * 
  * X
