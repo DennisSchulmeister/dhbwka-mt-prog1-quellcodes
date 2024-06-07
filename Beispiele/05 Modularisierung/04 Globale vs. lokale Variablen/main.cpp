@@ -44,8 +44,8 @@
  * letzten Wort so lange bei, bis ihr ein neuer Wert zugewiesen wird. Die zweite Zahlenreihe
  * zählt daher hoch, aber nicht mehr runter.
  *
- * Die eckigen Klammern in der Konsolenausgabe stehen für Funktionsaufrufe und verduetlichen
- * so, die Schachtelung der Funktionsaufrufe.
+ * Die eckigen Klammern in der Konsolenausgabe stehen für Funktionsaufrufe und verdeutlichen
+ * so die Schachtelung der Funktionsaufrufe.
  ***********************************************************************************************/
 
 #include <iostream>     // std::cout, std::cin, ...
