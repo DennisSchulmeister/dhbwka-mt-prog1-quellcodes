@@ -1,6 +1,6 @@
 /***********************************************************************************************
- * Header-Datei: Computer.hpp
- * ==========================
+ * Header: Computer.hpp
+ * ====================
  * 
  * Diese Datei beinhaltet die Deklarationen für das Objektmodul "computer.o", das der Compiler
  * aus der Quelldatei "compiler.cpp" erzeugt. Hier finden sich nur Deklarationen von Datentypen

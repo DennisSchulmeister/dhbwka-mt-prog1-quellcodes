@@ -21,7 +21,7 @@
  * #include <xyz> bezieht sich auf installierte Bibliotheken und die Standardbibliothek.
  ***********************************************************************************************/
 
-#include "computer.hpp" // Deklarationen zur Objektdatei computer.o, die aus computer.cpp erzeugt wird
+#include "computer.hpp" // Deklarationen zur Objektdatei computer.o
 #include <iostream>     // std::cout, std::cin, ...
 
 using namespace std;

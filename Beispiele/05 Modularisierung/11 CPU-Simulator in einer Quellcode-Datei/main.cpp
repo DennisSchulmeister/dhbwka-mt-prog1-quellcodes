@@ -167,11 +167,11 @@ void execute(computer_t &computer) {
     switch(opcode) {
         // Allgemeine Instruktionen
         case NOOP:   break;
-        case HALT:   computer.cpu.flags |= FLAG_HLT; break;
-        case CLRF:   computer.cpu.flags  = 0; break;
+        case HALT:   computer.cpu.flags |= FLAG_HLT;  break;
+        case CLRF:   computer.cpu.flags  = 0;         break;
     
         // Memory und I/O
-        case MOVE:   value1 = value2; break;
+        case MOVE:   value1 = value2;  break;
         case READ:   value1 = read(computer, (io_port_t) value2);  break;
         case WRITE:  write(computer, (io_port_t) value1, value2);  break;
         case PUSH:   computer.ram[computer.cpu.sp--] = value1;     break;

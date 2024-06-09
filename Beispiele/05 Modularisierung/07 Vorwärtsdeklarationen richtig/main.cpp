@@ -30,8 +30,44 @@
 
 #include <iostream>     // std::cout, std::cin, ...
 #include <string>       // std::string, std::getline, ...
+#include <cstdlib>      // rand
+#include <ctime>        // time
+#include <cassert>      // assert
 
 using namespace std;
 
+
+// Vorwärtsdeklarationen aller Funktionen
+int get_random_number();
+string get_random_message();
+
+
 int main(int argc, char **argv) {
+    cout << endl;
+    cout << get_random_message() << endl;
+    cout << endl;
+}
+
+
+string get_random_message() {
+    int nr = get_random_number();
+    assert(nr >= 0 && nr <= 2);
+
+    switch (nr) {
+        case 0:   return "Hallo!";
+        case 1:   return "Wie geht es Ihnen?";
+        case 2:   return "Was wollen Sie heute machen?";
+
+        // Fehlermeldung beim Compilieren unterdrücken. Durch den assert() oben ist
+        // bereits sichergestellt, dass der Fall nie eintreten kann. Falls doch,
+        // stürzt das Programm unter Angabe der Quellcodezeile ab.
+        default:  return "";
+    }
+}
+
+
+// Steht zur Verdeutlichung absichtlich nach ihrer Verwendung
+int get_random_number() {
+    srand(time(nullptr));
+    return rand() % 3;
 }
