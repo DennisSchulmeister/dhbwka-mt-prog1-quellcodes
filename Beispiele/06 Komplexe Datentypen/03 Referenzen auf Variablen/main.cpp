@@ -37,6 +37,20 @@
  * Bezeichner für dieselbe Variable. Eine Zuweisung an "ref_nr1" ändert daher "auch" den Wert
  * von "nr1":
  * 
+ *     ╔══════════════════════════════════════════════════╗
+ *     ║                 ┏━━━━━━━━┓                       ║
+ *     ║                 ┃        ┃ (Adresse 0x000)       ║
+ *     ║                 ┣━━━━━━━━┫    ·                  ║
+ *     ║                 ┃        ┃    ·                  ║
+ *     ║                 ┣━━━━━━━━┫    ·                  ║
+ *     ║        nr1 ═╦═> ┃   4711 ┃ (Adresse 0xCAFE)      ║
+ *     ║             ║   ┣━━━━━━━━┫    ·                  ║
+ *     ║    ref_nr1 ═╝   ┃        ┃    ·                  ║
+ *     ║                 ┣━━━━━━━━┫    ·                  ║
+ *     ║                 ┃        ┃ (Adresse 0xFFFF)      ║
+ *     ║                 ┗━━━━━━━━┛                       ║
+ *     ╚══════════════════════════════════════════════════╝
+ * 
  *     ref_nr1 = 815;
  *     cout << nr1 << endl;     // Gibt "815" aus
  * 
@@ -51,7 +65,7 @@
  * Funktionen können Sie allerdings sehr nützlich sein:
  * 
  * Indem man bestimmte Parameter einer Funktion als Referenz definiert, können die übergebenen
- * Wert innerhalb der Funktion geändert und die Änderung in der rufenden Umgebung sichtbar
+ * Werte innerhalb der Funktion geändert und die Änderung in der rufenden Umgebung sichtbar
  * gemacht werden. Anhand der Standardfunktion swap(), die in etwa wie folgt implementiert ist,
  * lässt sich das gut erklären:
  * 
@@ -62,8 +76,8 @@
  *     }
  *
  * v1 und v2 sind hier Referenzen und greifen daher direkt auf die Variable zu, die der Funktion
- * bei einem Aufruf übergeben werden. Dadurch wird es möglich, die Werte der beiden Variablem so
- * wie hier gezeigt zu vertauschen. (HINWEIS: Die echte Version der swap()-Methode hat noch ein
+ * bei einem Aufruf übergeben werden. Dadurch wird es möglich, die Werte der beiden Variablen, so
+ * wie hier gezeigt, zu vertauschen. (HINWEIS: Die echte Version der swap()-Methode hat noch ein
  * paar mehr Tricks auf Lager, damit sie nicht nur mit int-Variablen sondern allen Datentypen
  * funktioniert. Das Prinzip kommt aber hin.)
  * 
@@ -73,7 +87,7 @@
  * 
  * Als Referenz gekennzeichnete Parameter können darüber hinaus helfen, die Performance eines
  * Programms zu verbessern, indem kostspielige Kopieraktionen beim Aufruf einer Funktion
- * vermieden werden. Hat man beispielsweise eine sehr langen String mit mehreren Megabytes
+ * vermieden werden. Hat man beispielsweise einen seeeeeehr langen String mit mehreren Megabytes
  * an Daten und eine Funktion, an welche die Daten übergeben werden sollen. Dann würde folgender
  * Aufruf die Daten vor jedem Aufruf komplett kopieren und dadurch sowohl Laufzeit als auch
  * Speicher verschwenden:
