@@ -32,7 +32,7 @@
  * daher eine Header-Datei angelegt werden, welche diese Inhalte deklariert. Damit sind folgende
  * Inhalte gemeint, die in die Header-Datei gehören:
  * 
- *  - Selbst-definierte Datentypen (struct, class, enum, typedef)
+ *  - Selbst-definierte Datentypen (struct, class, enum, enum class, typedef)
  *  - Konstanten (const, constexpr, #define)
  *  - Präprozessor-Makros (#define)
  *  - Globale Variablen (extern)
