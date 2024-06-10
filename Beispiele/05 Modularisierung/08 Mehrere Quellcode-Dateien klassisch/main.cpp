@@ -7,7 +7,7 @@
  * einzuwenden. Denn weniger ist mehr, wie man so schön sagt. Und warum etwas komplizierter
  * machen, als es wirklich sein muss?
  * 
- * Ab einer bestimmten Größe (die jede/r für sich anders definiert), ist es allerdings doch
+ * Ab einer bestimmten Größe (die jede*r für sich anders definiert), ist es allerdings doch
  * übersichtlicher, den Quellcode in mehrere Dateien aufzuteilen. Auch kann man dadurch die
  * Zeit zum Compilieren des Programms nach einer Quellcode-Änderung reduzieren, da dann nur
  * die veränderten Dateien, nicht aber der gesamte Quellcode, neu übersetzt werden müssen.
