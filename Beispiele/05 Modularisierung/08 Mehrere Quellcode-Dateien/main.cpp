@@ -1,6 +1,6 @@
 /***********************************************************************************************
- * Beispiel: Mehrere Quellcode-Dateien klassisch
- * =============================================
+ * Beispiel: Mehrere Quellcode-Dateien
+ * ===================================
  * 
  * Die einfachen Programme, die bis bisher geschrieben haben, passten alle wunderbar in je eine
  * einzige Quellcode-Datei. Für kleine bis mittlere Programme ist da auch garnichts dagegen
