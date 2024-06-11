@@ -1,6 +1,6 @@
 /***********************************************************************************************
- * Beispiel: Mehrere Werte als Array
- * =================================
+ * Beispiel: Mehrere Werte als C-Array
+ * ===================================
  * 
  * Stellen Sie sich vor, Sie hätten ein Arduino Microcontroller-Board, das tatsächlich in C++
  * programmiert wird (die so genannte "Arduino Language" ist in Wirklichkeit C++ mit einer
@@ -41,7 +41,7 @@
  * 
  * Irgendwas stimmt hier nicht. Kann das wirklich alles so kompliziert sein? Und wie würden
  * man in so einem Programm den Tagesverlauf auswerten oder den Durchschnitt der letzten
- * zwei Stunden berechnen? Ganz klar: So geht es nicht.
+ * zwei Stunden berechnen? Ganz klar: So nicht.
  * 
  * Sie haben Glück! Tatsächlich ist das Problem, eine beliebige Anzahl gleichartiger Werte
  * verarbeiten zu können, mindestens so alt wie C und C++ selbst. Dementsprechend gibt es auch
@@ -65,7 +65,13 @@
  *     double temperatures[288] = {};
  * 
  * Diese Zeile definiert eine Array-Variable mit dem Namen "temperatures", die 288 double-Werte
- * verwalten kann. Die Werte liegen hintereinander im Hauptspeicher.
+ * verwalten kann. Die Werte liegen hintereinander im Hauptspeicher und werden durch die Zuweisung
+ * von {} mit Nullwerten initialisiert. Kleine Arrays mit wenigen vordefinierten Werten kann man
+ * auch so deklarieren:
+ * 
+ *     double some_values[] = {95, 73, 33, 87};
+ * 
+ * Doch zurück zum Beispiel.
  * 
  *     temperatures[i] = read_temperature_sensor();
  * 
@@ -75,14 +81,14 @@
  * Ergebnis liefert. Man nennt die hier eingesetzte Zahl auch den "Index", mit dem auf die
  * Array-Elemente zugegriffen wird.
  * 
- * WICHTIG: Der Index wird in C/C++ immer von null an gezählt. Der erste Eintrag in dem Array
+ * WICHTIG: Der Index wird in C/C++ immer von null an gezählt. Der erste Eintrag des Arrays
  * lautet daher temperatures[0] und der letzte Eintrag temperatures[287].
  * 
  *     i = i + 1 % 288;
  * 
  * Diese Zeile hat nur indirekt mit dem Array zu tun. Hier wird der Index für den nächsten
  * Messwert ausgerechnet, indem die Variable i um eins erhöht und dann der Rest (Modulo) einer
- * Division durch 288 gebildet werden. Als Folge daraus springt die Variable nach dem Wert 287
+ * Division durch 288 gebildet wird. Als Folge daraus springt die Variable nach dem Wert 287
  * wieder auf null zurück.
  * 
  * Will man auf die Array-Elemente zugreifen, um beispielsweise den Durchschnitt aller Werte
@@ -94,10 +100,10 @@
  * 
  * Damit ist eigentlich schon fast alles gesagt, was man über Arrays wissen muss. Allerdings
  * ist Ihnen vielleicht aufgefallen, dass die Länge des Arrays an mehreren Stellen in den
- * Beispielen als Zahl. Das offenbart ein großes Problem von Arrays in C und C++: Der Compiler
- * kennt ihre Länge nicht! Dementsprechend kann man die Länge weder im Quellcode abfragen, noch
- * kann der Compiler erkennen, wenn man versucht, auf ein Element zuzugreifen, dass über die
- * reservierte Länge des Arrays hinaus geht.
+ * Beispielen als Zahl erscheint. Das offenbart ein großes Problem von klassischen C-Arrays:
+ * Der Compiler kennt ihre Länge nicht! Dementsprechend kann man die Länge weder im Quellcode
+ * abfragen, noch kann der Compiler erkennen, wenn man versucht, auf ein Element zuzugreifen,
+ * das über die reservierte Länge des Arrays hinaus geht.
  * 
  * Eine einfache Strategie hiermit umzugehen, ist, eine Konstante für die Länge des Arrays
  * zu definieren. In etwa so:
@@ -139,7 +145,7 @@
  * eines double-Werts hinzu, um die adressierte Speicherstelle zu berechnen. Da für das Array
  * aber weniger Speicher reserviert wurde, schießt er dabei, ohne es zu merken, über das Ziel
  * hinaus und schreibt fröhlich die double-Zahl 3.686 dorthin. Das liegt an einer zweiten,
- * besonderen Eigenschaft von Arrays in C/C++:
+ * besonderen Eigenschaft von Arrays in C:
  * 
  * Arrays sind überwiegend "syntaktischer Zucker" für Zeiger in C/C++. Eine Array-Variable
  * ist immer auch ein Zeiger. Und mit Zeigern kann man rechnen, was "Zeigerarithmetik" (englisch
@@ -159,22 +165,19 @@
  * 
  *     *(ptr_val + 2) = 12.34;
  * 
- * Die Syntax ist weniger schön. In beiden Fällen passiert aber exakt dasselbe:
+ * Die zweite Syntax ist weniger schön. Es passiert aber exakt dasselbe:
  * 
  *   1. Addiere zur Speicheradresse die Länge von zwei double Werten (nicht zwei Bytes!)
  *   2. Dereferenziere den Zeiger, um auf die errechnete Speicherstelle zuzugreifen (*-Operator)
  *   3. Schreibe an die Speicherstelle den neuen Wert 12.34
  * 
  * Dadurch erklärt sich, warum der Compiler die Länge eines Arrays nicht kennt: Streng genommen
- * gibt es gar keine Arrays in C/C++, sondern nur Zeiger, die eine Speicheradresse beinhalten.
- * Und mit Speicheradressen kann man rechnen, um auf mehrere, hintereinander liegende Werte vom
- * selben Typ (und damit der selben Länge) zugreifen zu können. Anfang der 1970er-Jahre war
- * dies völlig ausreichend, um die erste Version von UNIX implementieren zu können. Die oben
- * beschriebenen Probleme plagen vor allem C-Programmierer*innen aber immer noch heute. 🤕
- * C++-Entwickler*innen eigentlich auch. Dort hat man aber in der Standardbibliothek neue Typen
- * definiert, die intern zwar mit klassischen Arrays arbeiten, darauf aufbauend aber mächtigere
- * und sicherere Funktionen zur Verfügung stellen. (Siehe nachfolgende Beispiele zu Vektoren,
- * Listen und Maps).
+ * gibt es gar keine Arrays in C, sondern nur Zeiger, die eine Speicheradresse beinhalten.
+ * Und mit Speicheradressen kann man rechnen. Anfang der 1970er-Jahre war dies ausreichend,
+ * um die erste Version von UNIX implementieren zu können. Die oben beschriebenen Probleme
+ * plagen C-Programmierer*innen aber immer noch heute. 🤕 C++-Entwickler*innen eigentlich auch.
+ * Dort hat man aber in der Standardbibliothek neue Typen definiert, die klassische C-Arrays
+ * in den meisten Fällen obsolet machen. Siehe nächstes Beispiel.
  * 
  * Doch auch eine andere Sache lässt sich dadurch nun abschließend erklären: Die Funktionsweise
  * von C-Strings. Also Variablen, die wie folgt deklariert werden:
@@ -204,23 +207,23 @@
  * 
  *     main.exe --enable-feature-a --output-file data.csv
  * 
- * argc enthält in diesem Fall die Zahl 4 und argv ist ein String-Array, also ein Array, das
- * mehrere C-Strings beinhaltet. Und da C-Strings in Wirklichkeit char-Arrays sind, ist argv
- * ein zwei-dimensionales char-Array, das man tatsächlich auch als argv[][] schreiben könnte.
- * Schauen wir uns das anhand eines Beispiels an:
+ * argc enthält in diesem Fall die Zahl 4 und argv ein Array mit C-Strings. Genau genommen
+ * also ein zwei-dimensionales Array, da jeder C-String selbst ja auch ein Array ist.
+ * Tatsächlich könnte man argv deshalb auch als argv[][] deklarieren. Der Folgende Quellcode
+ * zeigt die darin gespeicherten Inhalte:
  * 
  *     for (int i = 0; i < argc; i++) {
  *         cout << argv[i] << endl;
  *     }
  * 
- * Dies würde folgende Konsolenausgabe erzeugen:
+ * Dies würde in unserem Beispiel folgende Konsolenausgabe erzeugen:
  * 
  *     main.exe
  *     --enable-feature-a
  *     --output-file
  *     data.csv
  * 
- * Da argv[i] ebenfalls ein Array ist, könnte man so, auf die einzelnen Zeichen zugreifen:
+ * Da argv[i] ebenfalls ein Array ist, kann man auch auf die einzelnen Zeichen zugreifen:
  * 
  *     for (int i = 0; i < argc; i++) {
  *         for (int j = 0; j < strlen(argv[i]); j++) {
@@ -228,7 +231,7 @@
  *         }
  *     }
  * 
- * Alles klar? Dann haben Sie Zeiger, Arrays und C-Strings komplett verstanden. 👍
+ * Alles klar? Dann haben Sie Zeiger, C-Arrays und C-Strings komplett verstanden. 👍
  ***********************************************************************************************/
 
 #include <iostream>     // std::cout, std::cin, ...
