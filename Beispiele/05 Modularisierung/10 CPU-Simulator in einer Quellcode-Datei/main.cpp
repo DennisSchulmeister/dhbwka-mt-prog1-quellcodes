@@ -205,9 +205,9 @@ void execute(computer_t &computer) {
         case 0b01'00'0000:
         case 0b10'00'0000:
             computer.cpu.flags = 0;
-            if      (value1 == 0) computer.cpu.flags |= FLAG_ZRO;
-            else if (value1 <  0) computer.cpu.flags |= FLAG_LTZ;
-            else if (value1 >  0) computer.cpu.flags |= FLAG_GTZ;
+            if      ((int16_t) value1 == 0) computer.cpu.flags |= FLAG_ZRO;
+            else if ((int16_t) value1 <  0) computer.cpu.flags |= FLAG_LTZ;
+            else if ((int16_t) value1 >  0) computer.cpu.flags |= FLAG_GTZ;
     }
 
     store(computer, parameter1, value1);
