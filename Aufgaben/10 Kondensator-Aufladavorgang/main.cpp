@@ -2,7 +2,7 @@
  * Aufgabe: Kondensator-Aufladevorgang
  * ===================================
  *
- * Der Kondensator gehört zu den wichtigsten Bauteilen der Elektronik, da wie ein kleiner Akku
+ * Der Kondensator gehört zu den wichtigsten Bauteilen der Elektronik, da er wie ein kleiner Akku
  * Ladungen speichern und wieder abgeben kann. Seine Ladung baut sich stetig auf, wenn man über
  * einen Vorwiderstand eine Spannung angelegt wird und baut sich in umgekehrter Richtung wieder
  * ab, wenn die Spannung entfernt wird. Das zeitliche Verhalten kann mit folgenden Parametern
