@@ -17,7 +17,7 @@
  * 
  * Zeit t in Sekunden, Ladung Q in Coulomb. Das ^-Zeichen steht hier für die Potenz.
  * In C++ können Sie hierfür die Funktion std::exp aus dem Include <cmath> verwenden.
- * exp(n) berechnet "e hoch n".
+ * exp(n) berechnet "e hoch n" und exp(-t / R / C) berechnet "e hoch (-t/RC)".
  * 
  * Gute Werte zum Visualisieren dieser Formel sind: C = 0,05; R = 10, U = 5. Gemäß der
  * Formel 𝜏 = R×C erreicht der Kondensator hier nach 0,5 Sekunden ca. 63% der Ladung,
