@@ -17,11 +17,11 @@
  * 
  * Zeit t in Sekunden, Ladung Q in Coulomb. Das ^-Zeichen steht hier für die Potenz.
  * In C++ können Sie hierfür die Funktion std::exp aus dem Include <cmath> verwenden.
- * exp(n) berechnet "e hoch n" und exp(-t / R / C) berechnet "e hoch (-t/RC)".
+ * exp(n) berechnet „e hoch n”und exp(-t / R / C) berechnet „e hoch (-t/RC)”.
  * 
  * Gute Werte zum Visualisieren dieser Formel sind: C = 0,05; R = 10, U = 5. Gemäß der
  * Formel 𝜏 = R×C erreicht der Kondensator hier nach 0,5 Sekunden ca. 63% der Ladung,
- * so dass es genügt, das Interval t = [0…3] zu plotten, um den Verlauf zu visualisieren.
+ * so dass es genügt, das Intervall t = [0…3] zu plotten, um den Verlauf zu visualisieren.
  * 
  * Siehe: https://www.desmos.com/calculator/l5v1zlizdw
  * Oder Datei: Simulation in Desmos.png
@@ -93,8 +93,8 @@
  * ---------------------
  * 
  * Für diese Version müssen Sie den Quellcode nicht auskommentieren. Ändern sie ihn aber so ab,
- * dass eine Struktur mit den beiden Werten t und q im Vektor abgelegt werden, die jeweils für
- * die Zeit und die Ladung des Kondensators stehen:
+ * dass eine Struktur mit den beiden Werten t und q, die jeweils für die Zeit und die Ladung des
+ * Kondensators stehen, im Vektor abgelegt wird:
  * 
  *     struct value_t {
  *         double t;
