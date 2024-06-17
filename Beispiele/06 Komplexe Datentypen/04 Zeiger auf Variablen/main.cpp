@@ -201,7 +201,7 @@ int main(int argc, char **argv) {
 // Implementierung zur Funktion get_two_random_numbers(). Man beachte, dass hier die Default-Werte
 // nicht wiederholt werden können. Dass random1 und random2 bei Nicht-Übergabe automatisch mit dem
 // Wert nullptr initialisiert werden, sieht man nur bei der Funktionsdeklaration weiter oben.
-// Allerdings muss man bei Zeigern sowieso IMMER damit rechnen, dass diese Null Pointer sein könnne.
+// Allerdings muss man bei Zeigern sowieso IMMER damit rechnen, dass diese Null Pointer sein können.
 // Deshalb: "Vertrauen ist gut. Kontrolle ist besser!"
 void get_two_random_numbers(int range, int* random1, int* random2) {
     srand(time(nullptr));

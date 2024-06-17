@@ -72,7 +72,7 @@
  *     void swap(int &v1, int &v2) {
  *         int temp = v1;
  *         v1 = v2;
- *         v2 = v1;
+ *         v2 = temp;
  *     }
  *
  * v1 und v2 sind hier Referenzen und greifen daher direkt auf die Variable zu, die der Funktion

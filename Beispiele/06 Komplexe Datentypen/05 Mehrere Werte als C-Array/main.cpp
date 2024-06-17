@@ -5,7 +5,7 @@
  * Stellen Sie sich vor, Sie hätten ein Arduino Microcontroller-Board, das tatsächlich in C++
  * programmiert wird (die so genannte "Arduino Language" ist in Wirklichkeit C++ mit einer
  * Arduino-spezifischen Standardbibliothek) und wollten damit die Temperatur vor Ihrer Haustür
- * messen. Alle fünf Minuten sollte die Temperatur gemessen und so gespeichert werden, dass
+ * messen. Alle fünf Minuten soll die Temperatur gemessen und so gespeichert werden, dass
  * sowohl der Tagesverlauf nachvollzogen als auch ein gleitender Durchschnitt über die letzten
  * zwei Stunden gebildet werden kann. Wie würden Sie hierfür vorgehen?
  * 
