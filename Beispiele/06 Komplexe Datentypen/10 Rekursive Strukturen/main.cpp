@@ -18,6 +18,8 @@
  * selbst, des darin enthaltenen Vektors und der Einträge innerhalb des Vektors, wobei sich beim
  * dritten Schritt die Reihenfolge wiederholt.
  * 
+ * Die Produkte liegen in einem klassischen C-Array mit zwei Einträgen.
+ * 
  * Zur Ausgabe der Stücklisten gibt es hier eine Hilfsfunktion, die einen Zeiger vom Typ bom_t*
  * auf die anzuzeigende Stückliste sowie einen String zur Einrückung erwartet. Innerhalb der
  * Funktion werden Einrückung und Name des Bauteils ausgeben, bevor sich die Funktion selbst
@@ -33,7 +35,6 @@
  * nicht. Alles klar? :-)
  ***********************************************************************************************/
 
-#include <cstdint>      // Plattformunabhängige Ganzzahlen
 #include <iostream>     // std::cout, std::cin, ...
 #include <string>       // std::string, std::getline, ...
 #include <vector>       // std::vector
