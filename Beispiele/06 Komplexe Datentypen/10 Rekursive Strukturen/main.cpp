@@ -5,7 +5,7 @@
  * Dieses Beispiel zeigt mehrere der zuvor vorgestellten Konzepte in Kombination. Wir haben
  * hier eine Struktur, die beispielsweise in einem produzierenden Unternehmen die Stückliste
  * (englisch Bill of Material, kurz BOM) eines herzustellenden Gegenstands speichern könnte.
- * Diese zeichnet sich durch eine rekursive Definition aus, bei der ein herzustellendens
+ * Diese zeichnet sich durch eine rekursive Definition aus, bei der ein herzustellendes
  * Teil aus beliebig vielen, weiteren Teilen bestehen kann.
  * 
  * Um Stücklisten dieser Art verwalten zu können, wird am Anfang des Programm ein strukturierter
