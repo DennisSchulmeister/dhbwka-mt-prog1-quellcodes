@@ -13,8 +13,8 @@
  * Code-Generierung für die Host-CPU statt, um die Performance zu steigern. Doch gerade das
  * macht den Algorithmus so einfach und kompakt.
  * 
- * Die Emulation ist dabei ziemlich vollständig. Es fehlen leidglich Interrupts, die aber auch
- * einfach zu implementieren wären. Wenn Sie Ihre Informatik-Verständnis vertiefen wollen,
+ * Die Emulation ist dabei ziemlich vollständig. Es fehlen lediglich Interrupts, die aber auch
+ * einfach zu implementieren wären. Wenn Sie Ihr Informatik-Verständnis vertiefen wollen,
  * versuchen Sie, das Assembler-Programm in der main()-Funktion zu ändern und die simulierte
  * CPU einen anderen Algorithmus ausführen zu lassen.
  ***********************************************************************************************/
@@ -97,7 +97,7 @@ enum io_port_t: uint8_t {
 
 // Erzeugen einer vollständigen CPU-Instruktion. Diese besteht immer aus einem 16-Bit
 // Wert in folgendem Format: 8-Bit Opcode, 4-Bit Parameter 1, 4-Bit Parameter 2. Die
-// beiden 4-Bit-Werte spezifizieren Datentransporte für die Parameter des Opcodes,
+// beiden 4-Bit-Werte spezifizieren Datentransporte für die Parameter des Opcodes.
 inline uint16_t op(opcode_t opcode, parameter_t parameter1 = NONE, parameter_t parameter2 = NONE) {
     return opcode << 8 | parameter1 << 4 | parameter2;
 }
@@ -159,7 +159,7 @@ void execute(computer_t &computer) {
     uint16_t    instruction = computer.ram[computer.cpu.pc++];
     opcode_t    opcode      = (opcode_t)    (instruction >> 8 & 0x00FF);    // 1tes Byte: Opcode
     parameter_t parameter1  = (parameter_t) (instruction >> 4 & 0x000F);    // 3tes Halb-Byte: Parameter 1
-    parameter_t parameter2  = (parameter_t) (instruction      & 0x000F);    // 2tes Halb-Byte: Parameter 2
+    parameter_t parameter2  = (parameter_t) (instruction      & 0x000F);    // 4tes Halb-Byte: Parameter 2
 
     uint16_t value1 = load(computer, parameter1);
     uint16_t value2 = load(computer, parameter2);

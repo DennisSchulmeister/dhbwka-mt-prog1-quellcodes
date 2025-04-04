@@ -28,7 +28,7 @@ void execute(computer_t &computer) {
     uint16_t    instruction = computer.ram[computer.cpu.pc++];
     opcode_t    opcode      = (opcode_t)    (instruction >> 8 & 0x00FF);    // 1tes Byte: Opcode
     parameter_t parameter1  = (parameter_t) (instruction >> 4 & 0x000F);    // 3tes Halb-Byte: Parameter 1
-    parameter_t parameter2  = (parameter_t) (instruction      & 0x000F);    // 2tes Halb-Byte: Parameter 2
+    parameter_t parameter2  = (parameter_t) (instruction      & 0x000F);    // 4tes Halb-Byte: Parameter 2
 
     uint16_t value1 = load(computer, parameter1);
     uint16_t value2 = load(computer, parameter2);
